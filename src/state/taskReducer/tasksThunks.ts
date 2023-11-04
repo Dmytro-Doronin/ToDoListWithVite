@@ -16,7 +16,6 @@ import {todoActions} from "../todoReducer/todoReducer";
 export const fetchTask = createAppAsyncThunk<{tasks: TaskType[], todolistId: string}, string>(
     'task/fetchTask',
     async (todolistId, thunkAPI) => {
-        const {dispatch, rejectWithValue} = thunkAPI
 
         return thunkTryCatch(thunkAPI, async () => {
             const res = await todoListApi.getTasks(todolistId)
@@ -105,7 +104,6 @@ export const updateTask = createAppAsyncThunk<{
 
             const response = await todoListApi.updateTask(arg.todolistId, arg.taskId, apiModel)
             if (response.data.resultCode === 0) {
-                const {todolistId,taskId, domainModel} = arg
                 return arg
             } else {
                 hendleServerNetworkError(response.data.messages, dispatch);
