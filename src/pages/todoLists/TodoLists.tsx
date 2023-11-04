@@ -3,7 +3,7 @@ import AddItemForm from "../../components/addItemForm/AddItemForm";
 import TodoList from "../../components/TodoList/TodoList";
 import {useCallback, useEffect, useState} from "react";
 import {useAppDispatch, useAppSelector} from "../../hooks/reduxHooks";
-// import {changeFilterTodoAction} from "../../state/todoReducer/todo-type";
+
 import {Navigate} from "react-router-dom";
 import {TaskStatus} from "../../serverApi/todoListsApi";
 import {todoActions} from "../../state/todoReducer/todoReducer";

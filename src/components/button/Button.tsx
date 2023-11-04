@@ -2,8 +2,6 @@ import React from 'react';
 import * as console from "console";
 import {Button} from "@mui/material";
 
-import c from '../TodoList/todoList.module.css'
-
 type ButtonType = {
     className?: string
     children: React.ReactNode

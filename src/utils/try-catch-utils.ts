@@ -1,10 +1,10 @@
 import {AppThunkDispatchType, AppRootStateType} from "../state/store/store";
-import {handleServerAppError, hendleServerNetworkError} from "./error-utils";
+import { hendleServerNetworkError} from "./error-utils";
 import { BaseThunkAPI } from '@reduxjs/toolkit/dist/createAsyncThunk';
 import {appActions} from "../state/appReducer/appReducer";
 
 import {ResponseType} from "../serverApi/todoListsApi";
-import {todoActions} from "../state/todoReducer/todoReducer";
+
 
 export const thunkTryCatch = async (
     thunkAPI: BaseThunkAPI<AppRootStateType, any, AppThunkDispatchType, null | ResponseType>,

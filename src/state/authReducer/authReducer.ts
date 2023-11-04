@@ -1,12 +1,6 @@
 
-import {Dispatch} from "redux";
-import {LoginType} from "../../pages/login/Login";
-import {authApi} from "../../serverApi/todoListsApi";
-import {handleServerAppError, hendleServerNetworkError} from "../../utils/error-utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {AppThunk} from "../store/store";
-import {appActions} from "../appReducer/appReducer";
-import {todoActions} from "../todoReducer/todoReducer";
+
 
 type LoginFlagType = {
     isLoggedIn: boolean

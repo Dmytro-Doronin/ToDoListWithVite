@@ -1,9 +1,5 @@
 import { RequestStatusType} from "../appReducer/appReducer";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {todoListApi} from "../../serverApi/todoListsApi";
-import {createAppAsyncThunk} from "../../utils/createAppAthunkThunk";
-import {hendleServerNetworkError} from "../../utils/error-utils";
-import {thunkTryCatch} from "../../utils/try-catch-utils";
 import { todoThunks } from './todoThunks'
 
 //TYPES
@@ -50,6 +46,7 @@ const slice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(todoThunks.fetchTodoList.fulfilled, (state, action) => {
+                console.log(state)
                 return action.payload.todoLists.map((item) => ({...item, filter: 'all', entityStatus: 'idle'}))
             })
             .addCase(todoThunks.addTodoList.fulfilled, (state, action) => {

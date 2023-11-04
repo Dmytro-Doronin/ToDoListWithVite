@@ -21,7 +21,6 @@ const Tasks = React.memo((
         id,
         todoId,
         task,
-        title,
         changeStatus,
     }: TaskPropType) => {
     const dispatch = useAppDispatch()

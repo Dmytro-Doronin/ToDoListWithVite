@@ -1,10 +1,10 @@
 
-import {TaskPriorities, TaskStatus, TaskType, todoListApi, UpdateTaskModel} from "../../serverApi/todoListsApi";
+import {TaskPriorities, TaskStatus, TaskType} from "../../serverApi/todoListsApi";
 import { createSlice } from "@reduxjs/toolkit";
 import { todoThunks} from "../todoReducer/todoThunks";
 
 import {addTask, fetchTask, removeTask, updateTask} from "./tasksThunks";
-import {RequestStatusType} from "../appReducer/appReducer";
+
 
 // TYPES
 
@@ -73,5 +73,5 @@ const slice = createSlice({
 
 
 export const taskReducer = slice.reducer
-export const taskActions = slice.actions
+// export const taskActions = slice.actions
 

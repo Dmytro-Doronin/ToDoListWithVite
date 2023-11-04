@@ -3,13 +3,15 @@ import {thunkTryCatch} from "../../utils/try-catch-utils";
 import {todoListApi} from "../../serverApi/todoListsApi";
 import {hendleServerNetworkError} from "../../utils/error-utils";
 import {TodoListType} from "./todoReducer";
-import {appActions, appReducer} from "../appReducer/appReducer";
+
 import {todoActions} from "./todoReducer";
+
+
 
 const fetchTodoList = createAppAsyncThunk<{ todoLists: TodoListType[]}, void>(
     'todo/fetchTodoList', async (arg, thunkAPI) => {
-        const {dispatch, rejectWithValue} = thunkAPI
-
+        // const {dispatch, rejectWithValue} = thunkAPI
+        console.log(arg)
         return thunkTryCatch(thunkAPI, async () => {
             const response = await todoListApi.getTodoLists()
             return {todoLists: response.data}
@@ -19,7 +21,7 @@ const fetchTodoList = createAppAsyncThunk<{ todoLists: TodoListType[]}, void>(
 
 const addTodoList = createAppAsyncThunk<{todoList: TodoListType}, { title: string }>(
     'todo/addTodoList', async (arg, thunkAPI) => {
-        const {dispatch, rejectWithValue} = thunkAPI
+        // const {dispatch, rejectWithValue} = thunkAPI
 
         return thunkTryCatch(thunkAPI, async () => {
             const response = await todoListApi.postTodoLists(arg.title)
