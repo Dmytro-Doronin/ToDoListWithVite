@@ -1,0 +1,12 @@
+/*.addItemForm {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+.errorText {
+    color: red;
+}
+
+.addItemFormWrapper {
+    display: flex;
+    align-items: center;
+}

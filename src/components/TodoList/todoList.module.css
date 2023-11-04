@@ -1,0 +1,15 @@
+
+.errorInput {
+    border: 1px solid red;
+}
+
+.btn {
+    margin-right: 5px;
+}
+.btnActive {
+    background-color: aqua;
+}
+
+.alertEmptyTask {
+    padding: 10px 0;
+}
