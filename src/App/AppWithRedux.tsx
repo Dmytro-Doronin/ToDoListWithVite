@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 
 import {TodoLists} from "../pages/todoLists/TodoLists";
