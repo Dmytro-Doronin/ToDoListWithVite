@@ -1,5 +1,6 @@
-# Hello! Please, check my app on vercel.
+# Hello!
+Project setup
 
-https://to-do-list-with-vite-gamma.vercel.app/login
+yarn dev
 
 
