@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "to-do",
+  "builds": [
+    { "src": "dist/assets/index-b6916128.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "src/assets/index-b6916128.js" }
+  ]
+}

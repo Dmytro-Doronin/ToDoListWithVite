@@ -4,7 +4,7 @@ import {TodoListType} from "../state/todoReducer/todoReducer";
 
 
 const instance = axios.create({
-    baseURL:'https://social-network.samuraijs.com/api/1.1/',
+    baseURL:'https://social-network.samuraijs.com/api/1.1',
     withCredentials: true,
     headers: {
         'API-KEY': '44b4ed13-0e89-4877-b270-a313fdbdbaba'
