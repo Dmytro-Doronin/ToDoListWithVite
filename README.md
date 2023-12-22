@@ -1,6 +1,4 @@
 # Hello!
-Project setup
-
-yarn dev
+https://to-do-list-with-vite-gamma.vercel.app
 
 
