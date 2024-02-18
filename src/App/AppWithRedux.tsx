@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import './App.css';
+import c from './App.module.css';
 
 import {TodoLists} from "../pages/todoLists/TodoLists";
 import {Login} from "../pages/login/Login";
@@ -46,7 +46,7 @@ function AppWithRedux() {
     return (
         <div className="App">
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar className={c.appBar}>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         TodoList
                     </Typography>

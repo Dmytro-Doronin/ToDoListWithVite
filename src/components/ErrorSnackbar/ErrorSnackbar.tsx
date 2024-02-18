@@ -31,7 +31,6 @@ export const CustomizedSnackbars = () =>  {
                 {error}
             </Alert>
         </Snackbar>
-
     );
 }
 

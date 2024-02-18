@@ -6,3 +6,8 @@
 /*.App > div {*/
 /*  margin-right: 50px;*/
 /*}*/
+
+.appBar {
+    margin: 0 auto;
+    width: 1200px;
+}
